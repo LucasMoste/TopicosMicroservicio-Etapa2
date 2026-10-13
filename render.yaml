@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ms-promociones-precios
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: SERVICE_NAME
+        value: promociones-precios
+      - key: Z_URL
+        value: https://ms-productos-1uz6.onrender.com
+      - key: PROMOS_URL
+        value: https://topicosmicroservicio.onrender.com
+      - key: UPSTREAM_TIMEOUT_MS
+        value: 5000

@@ -1,0 +1,22 @@
+{
+  "name": "ms-promociones-precios",
+  "version": "1.0.0",
+  "description": "Servicio derivado promociones-precios (Etapa 2) - Consume MS-productos y MS-promociones",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test:mock": "node test/test-mock.js",
+    "test:real": "node test/test-real.js",
+    "test": "node test/test-mock.js && node test/test-real.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
